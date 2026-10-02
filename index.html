@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Refreshed Biolabs – Reinheit, nachweisbar</title>
+<meta name="description" content="Dokumentierte Forschungsmaterialien. Jede Charge extern per HPLC und Massenspektrometrie geprüft, mit eigenem Analysezertifikat. Ausschließlich für die Laborforschung.">
+<meta property="og:title" content="Refreshed Biolabs – Reinheit, nachweisbar">
+<meta property="og:description" content="Jede Charge extern per HPLC und Massenspektrometrie geprüft, mit eigenem Analysezertifikat. Ausschließlich für die Laborforschung.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F6F4EF">
+<link rel="preload" href="fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Self-hosted fonts (SIL Open Font License), loaded from ./fonts */
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url('fonts/archivo-latin-ext-wdth-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url('fonts/archivo-latin-wdth-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-display:swap;font-weight:200 800;src:url('fonts/manrope-latin-ext-wght-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-display:swap;font-weight:200 800;src:url('fonts/manrope-latin-wght-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-display:swap;font-weight:100 800;src:url('fonts/jetbrains-mono-latin-ext-wght-normal.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-display:swap;font-weight:100 800;src:url('fonts/jetbrains-mono-latin-wght-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --ink:#141414;--cream:#F6F4EF;--muted:#4A4740;--muted-2:#6B675E;--line:#E6E2D8;
+  --accent:#6A3FC8;
+  --holo:linear-gradient(150deg,#8FE3D3 0%,#AFC6FF 38%,#D6B3F3 68%,#F4B3CF 100%);
+  --holo-sm:linear-gradient(150deg,#8FE3D3 0%,#AFC6FF 45%,#F4B3CF 100%);
+  --pad:clamp(20px,8.3vw,120px);
+  --sec:clamp(80px,9.7vw,140px);
+  --sh:6px;
+  --display:Archivo,'Arial Narrow',Arial,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,'Helvetica Neue',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,p{margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
+.wrap{padding-left:var(--pad);padding-right:var(--pad)}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:8px;z-index:100;text-decoration:none}
+.skip:focus{top:12px}
+
+/* Shared */
+.card{background:#fff;border:2px solid var(--ink);border-radius:20px;box-shadow:var(--sh) var(--sh) 0 var(--ink)}
+.pill{display:inline-block;font:600 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:#fff;border:1.5px solid var(--ink);border-radius:999px;padding:6px 12px}
+.h2{font-family:var(--display);font-weight:800;font-stretch:110%;font-size:clamp(34px,3.7vw,52px);line-height:1.04;letter-spacing:-.02em;max-width:820px}
+.lead{font-size:17px;line-height:1.6;color:var(--muted);max-width:640px}
+.sec-head{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.section{padding-top:var(--sec)}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;background:var(--ink);color:var(--cream);text-decoration:none;font-weight:700;font-size:16px;line-height:1.2;padding:17px 30px;border-radius:999px;transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover{transform:translate(-1px,-1px)}
+.btn-accent{box-shadow:5px 5px 0 var(--accent)}
+.btn-accent:hover{box-shadow:6px 6px 0 var(--accent)}
+.btn-lg{font-size:17px;padding:19px 34px}
+.btn-light{background:var(--cream);color:var(--ink)}
+
+/* Top bar & header */
+.topbar{background:var(--ink);color:var(--cream);font:12px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-align:center;padding:10px 16px;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(246,244,239,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:2px solid var(--ink)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:18px;padding-bottom:18px}
+.logo{display:flex;align-items:baseline;gap:6px;text-decoration:none;color:var(--ink);flex:none}
+.logo b{font-weight:800;font-size:28px;letter-spacing:-.035em}
+.logo span{font-weight:400;font-size:20px;letter-spacing:-.01em}
+.nav{display:flex;gap:34px;font-size:15px;font-weight:600}
+.nav a{text-decoration:none}
+.nav a:hover{color:var(--accent)}
+.header-actions{display:flex;align-items:center;gap:14px}
+.lang{display:flex;border:2px solid var(--ink);border-radius:999px;padding:3px;background:#fff}
+.lang button{border:0;background:transparent;color:var(--ink);border-radius:999px;padding:9px 15px;min-height:38px;font:600 13px var(--mono);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.header-cta{font-size:15px;padding:14px 24px}
+.menu-toggle{display:none;width:44px;height:44px;border:2px solid var(--ink);border-radius:12px;background:#fff;align-items:center;justify-content:center;cursor:pointer;color:var(--ink)}
+.mobile-nav{display:none;flex-direction:column;border-top:1px solid var(--line);padding-top:6px;padding-bottom:22px}
+.mobile-nav a.link{text-decoration:none;font-size:18px;font-weight:700;padding:14px 0;border-bottom:1px solid var(--line)}
+.mobile-nav .btn{margin-top:18px}
+.site-header.open .mobile-nav{display:flex}
+
+/* Hero */
+.hero{position:relative;padding:72px var(--pad) 96px;overflow:hidden}
+.hero-art{position:absolute;top:0;right:0;width:56%;height:100%;background:var(--holo);clip-path:polygon(34% 0,100% 0,100% 100%,0 100%);z-index:0}
+.float{position:absolute;display:flex;flex-direction:column;gap:8px;border:2px solid var(--ink);border-radius:18px}
+.float-lot{top:150px;right:18%;width:340px;transform:rotate(-4deg);background:#fff;box-shadow:7px 7px 0 var(--ink);padding:26px 30px}
+.float-an{top:410px;right:27%;width:auto;min-width:300px;transform:rotate(3deg);background:var(--ink);color:var(--cream);box-shadow:7px 7px 0 #fff;padding:24px 28px}
+.float .k{font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.float-lot .k{color:var(--accent)}
+.float-an .k{color:#C9C5BC}
+.float .v{font-family:var(--display);font-weight:800;font-stretch:110%;letter-spacing:-.02em}
+.float-lot .v{font-size:30px}
+.float-an .v{font-size:26px;white-space:nowrap}
+.float-lot .s{font-size:16px;color:var(--muted)}
+.float-an .s{font-size:16px;color:#D2CEC5}
+.hero-copy{position:relative;z-index:1;width:min(680px,100%);display:flex;flex-direction:column;align-items:flex-start;gap:28px}
+.hero-pill{font:600 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;background:#fff;border:2px solid var(--ink);border-radius:999px;padding:8px 14px;box-shadow:3px 3px 0 var(--ink)}
+.hero h1{font-family:var(--display);font-weight:800;font-stretch:112%;font-size:clamp(40px,5.6vw,80px);line-height:1.02;letter-spacing:-.025em;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.hero h1 .box{background:var(--ink);color:var(--cream);padding:2px 20px 8px;border-radius:12px;transform:rotate(-1.5deg)}
+.hero-sub{font-size:19px;line-height:1.6;color:var(--muted);max-width:560px}
+.hero-cta{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.micro{font-size:14px;font-weight:600;color:var(--muted)}
+.ruo{position:relative;z-index:1;margin-top:48px;display:flex;gap:16px;align-items:flex-start;padding:18px 24px;border-radius:16px}
+.ruo svg{flex:none;margin-top:2px}
+.ruo p{font-size:14px;line-height:1.55;color:var(--muted)}
+.ruo strong{color:var(--ink)}
+.stats{position:relative;z-index:1;margin-top:28px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.stat{border-radius:18px;padding:28px 20px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.stat strong{font-family:var(--display);font-weight:800;font-stretch:110%;font-size:clamp(28px,2.5vw,36px);letter-spacing:-.02em;color:var(--accent);line-height:1.1}
+.stat span{font-size:14px;font-weight:600;color:var(--muted)}
+
+/* Band */
+.band{background:var(--ink);color:var(--cream);border-radius:22px;box-shadow:8px 8px 0 var(--accent);padding:44px 56px;display:flex;align-items:center;justify-content:space-between;gap:48px}
+.band .txt{display:flex;flex-direction:column;align-items:flex-start;gap:16px;max-width:640px}
+.band .pill-dark{font:600 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream);border-radius:999px;padding:6px 12px}
+.band h2{font-family:var(--display);font-weight:800;font-stretch:110%;font-size:clamp(28px,2.5vw,36px);line-height:1.08;letter-spacing:-.02em}
+.band p{font-size:16px;line-height:1.6;color:#D2CEC5}
+.band .btn{flex:none}
+
+/* About */
+.two-col{margin-top:48px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.about-left{padding:40px;display:flex;flex-direction:column;gap:14px}
+.about-left .intro{font-size:18px;line-height:1.6;font-weight:500;margin-bottom:10px}
+.about-left h3{font-family:var(--display);font-weight:800;font-size:18px;color:var(--accent)}
+.about-left p.b{font-size:16px;line-height:1.6;color:var(--muted)}
+.about-left p.b:not(:last-child){margin-bottom:10px}
+.checks{list-style:none;margin:0;padding:24px 40px}
+.checks li{display:flex;align-items:center;gap:16px;padding:17px 0;border-bottom:1.5px solid var(--line);font-size:16px;font-weight:600}
+.tick{flex:none;width:28px;height:28px;border-radius:999px;border:2px solid var(--ink);background:var(--holo-sm);display:flex;align-items:center;justify-content:center}
+
+/* Quality */
+.three{margin-top:48px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.q-card{padding:32px;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.icon{width:52px;height:52px;border-radius:14px;border:2px solid var(--ink);background:var(--holo-sm);display:flex;align-items:center;justify-content:center}
+.q-card h3{margin-top:6px;font-family:var(--display);font-weight:800;font-size:21px}
+.q-card p{font-size:16px;line-height:1.6;color:var(--muted)}
+
+/* Process */
+.steps{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.steps li{border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.steps .n{font:600 14px var(--mono);color:var(--accent)}
+.steps h3{font-family:var(--display);font-weight:800;font-size:19px}
+.steps p{font-size:15px;line-height:1.6;color:var(--muted)}
+
+/* Certificates */
+.certs{border-radius:24px;box-shadow:8px 8px 0 var(--ink);padding:52px;display:flex;align-items:center;gap:56px}
+.certs .txt{flex:1 1 auto;display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+.certs h2{font-family:var(--display);font-weight:800;font-stretch:110%;font-size:clamp(30px,2.8vw,40px);line-height:1.06;letter-spacing:-.02em}
+.certs .lead{max-width:520px}
+.certs .btn{margin-top:6px}
+.tiles{flex:none;width:500px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.tile{background:var(--cream);border:2px solid var(--ink);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:6px}
+.tile .k{font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted-2)}
+.tile .v{font-family:var(--display);font-weight:800;font-size:20px;line-height:1.2;color:var(--accent)}
+
+/* FAQ */
+.faq{margin-top:48px;display:flex;flex-direction:column;gap:16px}
+.faq details{background:#fff;border:2px solid var(--ink);border-radius:16px;box-shadow:4px 4px 0 var(--ink)}
+.faq summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 28px;cursor:pointer;font-size:17px;font-weight:700}
+.faq summary::-webkit-details-marker{display:none}
+.faq .sign{flex:none;font:500 22px/1 var(--mono);color:var(--accent);transition:transform .2s ease}
+.faq details[open] .sign{transform:rotate(45deg)}
+.faq details p{padding:0 28px 24px;font-size:16px;line-height:1.65;color:var(--muted);max-width:900px}
+
+/* Contact / final */
+.contact{padding:44px;display:flex;flex-direction:column;gap:26px;background:var(--holo);border-radius:22px}
+.contact .k{font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.contact .row{display:flex;flex-direction:column;gap:6px}
+.contact .v{font-size:19px;font-weight:700;line-height:1.45;text-decoration:none;color:var(--ink);overflow-wrap:anywhere}
+.contact a.v:hover{text-decoration:underline}
+.final-card{padding:44px;display:flex;flex-direction:column;justify-content:center;gap:20px;border-radius:22px}
+.final-card .t{font-family:var(--display);font-weight:800;font-size:28px;line-height:1.2}
+.final-card .btn{margin-top:8px;width:100%;padding:20px 30px;font-size:17px}
+.final-card .micro{text-align:center}
+
+/* Footer */
+.site-footer{margin-top:var(--sec);background:var(--ink);color:var(--cream);padding-top:72px;padding-bottom:calc(44px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:40px}
+.footer-top{display:flex;justify-content:space-between;gap:48px}
+.footer-brand{display:flex;flex-direction:column;gap:16px;max-width:380px}
+.footer-brand .logo{color:var(--cream)}
+.footer-brand p{font-size:15px;line-height:1.6;color:#C9C5BC}
+.footer-cols{display:grid;grid-template-columns:repeat(3,minmax(0,auto));gap:64px}
+.footer-cols div{display:flex;flex-direction:column;gap:12px;font-size:15px}
+.footer-cols .h{font:12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#A8A399}
+.footer-cols a{text-decoration:none;color:var(--cream)}
+.footer-cols a:hover{text-decoration:underline}
+.footer-bottom{border-top:1px solid #3A3935;padding-top:28px;display:flex;flex-direction:column;gap:14px}
+.footer-bottom p{font-size:13px;line-height:1.6;color:#BDB8AE;max-width:960px}
+.footer-bottom span{font-size:13px;color:#A8A399}
+
+.sticky-cta{display:none}
+
+/* ---------- Tablet ---------- */
+@media (max-width:1080px){
+  :root{--sh:5px}
+  .nav{display:none}
+  .menu-toggle{display:flex}
+  .hero{padding-top:56px;padding-bottom:72px}
+  .hero-art{position:relative;width:auto;height:auto;clip-path:none;margin:48px calc(-1 * var(--pad)) 0;padding:56px var(--pad) 64px;display:flex;flex-direction:column;align-items:center;gap:28px}
+  .float{position:relative;top:auto;right:auto}
+  .float-lot{width:min(340px,100%);margin-right:12%}
+  .float-an{width:min(300px,92%);margin-left:14%}
+  .ruo{margin-top:-28px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .band{flex-direction:column;align-items:flex-start;gap:28px;padding:40px}
+  .two-col{grid-template-columns:1fr}
+  .three{grid-template-columns:1fr;gap:20px}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+  .certs{flex-direction:column;align-items:stretch;gap:36px;padding:40px}
+  .tiles{width:100%}
+  .footer-top{flex-direction:column}
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width:720px){
+  :root{--sh:4px}
+  html{scroll-padding-top:80px}
+  body{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+  .topbar{font-size:10.5px;letter-spacing:.04em;padding-left:12px;padding-right:12px}
+  .header-inner{padding-top:12px;padding-bottom:12px;gap:10px}
+  .logo b{font-size:23px}
+  .logo span{font-size:16px}
+  .header-cta{display:none}
+  .lang button{padding:8px 11px}
+  .hero{padding-top:40px;padding-bottom:56px}
+  .hero-copy{gap:22px}
+  .hero h1{font-stretch:106%;font-size:clamp(36px,10.4vw,56px)}
+  .hero h1 .box{padding:2px 14px 6px;border-radius:10px}
+  .hero-sub{font-size:17px}
+  .hero-cta,.hero-cta .btn{width:100%}
+  .micro{line-height:1.5}
+  .hero-art{margin-top:40px;padding:44px var(--pad) 60px;gap:22px}
+  .float-lot{padding:20px 22px;margin-right:6%}
+  .float-lot .v{font-size:24px}
+  .float-an{padding:20px 22px;margin-left:8%}
+  .float-an .v{font-size:21px}
+  .float .s{font-size:14px}
+  .ruo{padding:16px;gap:12px}
+  .ruo p{font-size:13px}
+  .stats{gap:14px}
+  .stat{padding:20px 12px;border-radius:16px}
+  .stat strong{font-size:24px}
+  .stat span{font-size:13px}
+  .band{padding:32px 24px;border-radius:18px;box-shadow:5px 5px 0 var(--accent)}
+  .band .btn{width:100%}
+  .two-col,.three,.steps,.faq{margin-top:36px}
+  .about-left{padding:28px 24px}
+  .about-left .intro{font-size:17px}
+  .checks{padding:12px 24px}
+  .checks li{font-size:15px;gap:14px;padding:15px 0}
+  .checks li:last-child{border-bottom:0}
+  .q-card{padding:26px 24px}
+  .steps{grid-template-columns:1fr;gap:16px}
+  .steps li{padding:24px}
+  .certs{padding:28px 22px;border-radius:20px;box-shadow:5px 5px 0 var(--ink)}
+  .certs .btn{width:100%}
+  .tiles{gap:12px}
+  .tile{padding:14px}
+  .tile .v{font-size:16px}
+  .tile .k{font-size:10px;letter-spacing:.03em;hyphens:manual}
+  .faq{gap:12px}
+  .faq summary{font-size:16px;padding:18px 20px;gap:16px}
+  .faq details p{padding:0 20px 20px;font-size:15px}
+  .contact,.final-card{padding:28px 24px}
+  .contact .v{font-size:17px}
+  .final-card .t{font-size:23px}
+  .footer-cols{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+  .site-footer{padding-top:56px}
+  .sticky-cta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(246,244,239,.97);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:2px solid var(--ink);padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));transform:translateY(115%);transition:transform .25s ease}
+  .sticky-cta.show{transform:none}
+  .sticky-cta .btn{width:100%;padding:16px 20px;box-shadow:4px 4px 0 var(--accent)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+
+<div class="topbar" data-i18n="bar">Ausschließlich für die Laborforschung · Versand aus der EU in 2–3 Tagen · Kostenlos ab 100 €</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo" aria-label="Refreshed Biolabs"><b>refreshed</b><span>Bio Labs</span></a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="#about" data-i18n="nav.about">Über uns</a>
+      <a href="#quality" data-i18n="nav.quality">Qualität</a>
+      <a href="#process" data-i18n="nav.process">Ablauf</a>
+      <a href="#certificates" data-i18n="nav.certs">Analysezertifikate</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang" role="group" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" aria-pressed="true">DE</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn header-cta" href="https://refreshedbiolabs.com/produkte" data-i18n="nav.cta">Zum Katalog</a>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Menü öffnen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="wrap mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <a class="link" href="#about" data-i18n="nav.about">Über uns</a>
+    <a class="link" href="#quality" data-i18n="nav.quality">Qualität</a>
+    <a class="link" href="#process" data-i18n="nav.process">Ablauf</a>
+    <a class="link" href="#certificates" data-i18n="nav.certs">Analysezertifikate</a>
+    <a class="link" href="#faq">FAQ</a>
+    <a class="btn btn-accent" href="https://refreshedbiolabs.com/produkte" data-i18n="nav.cta">Zum Katalog</a>
+  </nav>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-copy">
+    <span class="hero-pill" data-i18n="hero.pill">Dokumentierte Forschungsmaterialien</span>
+    <h1><span data-i18n="hero.h1a">Reinheit,</span><span class="box" data-i18n="hero.h1b">nachweisbar.</span></h1>
+    <p class="hero-sub" data-i18n="hero.sub">Jede Charge wird von einem unabhängigen Labor per HPLC und Massenspektrometrie geprüft – und kommt mit ihrem eigenen Analysezertifikat. Sie sehen den Messwert, bevor Sie bestellen.</p>
+    <div class="hero-cta">
+      <a class="btn btn-lg btn-accent" href="https://refreshedbiolabs.com/produkte" data-i18n="hero.cta">Katalog ansehen</a>
+      <span class="micro" data-i18n="micro">Versand aus der EU in 2–3 Tagen · Kostenlos ab 100 € · Sicherer Checkout</span>
+    </div>
+  </div>
+
+  <div class="hero-art" aria-hidden="false">
+    <div class="float float-lot">
+      <span class="k" data-i18n="hero.lotLabel">Charge geprüft</span>
+      <span class="v">Lot RB-2411-I</span>
+      <span class="s" data-i18n="hero.lotPurity">Reinheit 99,2 % · CoA verfügbar</span>
+    </div>
+    <div class="float float-an">
+      <span class="k" data-i18n="hero.anLabel">Analytik</span>
+      <span class="v">RP-HPLC + ESI-MS</span>
+      <span class="s" data-i18n="hero.anSub">Durch ein unabhängiges Drittlabor</span>
+    </div>
+  </div>
+
+  <div class="card ruo">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"></path><path d="M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"></path><path d="M7.5 15h9"></path></svg>
+    <p><strong data-i18n="ruo.title">Nur für die Laborforschung (Research Use Only).</strong> <span data-i18n="ruo.body">Alle Produkte sind ausschließlich für Forschungszwecke bestimmt. Nicht für den menschlichen oder tierischen Gebrauch, nicht zur Diagnose, Behandlung oder Vorbeugung von Krankheiten. Verkauf nur an Personen ab 18 Jahren.</span></p>
+  </div>
+
+  <div class="stats">
+    <div class="card stat"><strong data-i18n="s1v">99,0 %+</strong><span data-i18n="s1l">Mindestreinheit</span></div>
+    <div class="card stat"><strong>CoA</strong><span data-i18n="s2l">Zu jeder Charge</span></div>
+    <div class="card stat"><strong>HPLC + MS</strong><span data-i18n="s3l">Externe Analytik</span></div>
+    <div class="card stat"><strong data-i18n="s4v">2–3 Tage</strong><span data-i18n="s4l">Lieferung in der EU</span></div>
+  </div>
+</section>
+
+<!-- CATALOG BAND -->
+<section class="wrap">
+  <div class="band">
+    <div class="txt">
+      <span class="pill-dark" data-i18n="band.pill">Katalog</span>
+      <h2 data-i18n="band.title">Jede Charge liegt offen im Katalog.</h2>
+      <p data-i18n="band.body">Lot-Nummer, gemessene Reinheit und Analysezertifikat stehen bei jedem Produkt. Bestellungen bis 15 Uhr verlassen unser Lager am selben Werktag.</p>
+    </div>
+    <a class="btn btn-light" href="https://refreshedbiolabs.com/produkte" data-i18n="band.cta">Katalog öffnen</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="wrap section" id="about">
+  <div class="sec-head">
+    <span class="pill" data-i18n="about.pill">Über uns</span>
+    <h2 class="h2" data-i18n="about.title">Für Labore, die Belege statt Versprechen wollen.</h2>
+    <p class="lead" data-i18n="about.sub">Refreshed Biolabs liefert dokumentierte Forschungsmaterialien an Labore und qualifizierte Forschende. Keine Charge geht raus, bevor ein Drittlabor sie bestätigt hat.</p>
+  </div>
+  <div class="two-col">
+    <div class="card about-left">
+      <p class="intro" data-i18n="about.intro">Wir liefern Material, dessen Identität und Reinheit gemessen und dokumentiert sind. Nicht mehr und nicht weniger.</p>
+      <h3 data-i18n="about.stdTitle">Unser Standard</h3>
+      <p class="b" data-i18n="about.stdBody">Rohstoffprüfung, dokumentierte Synthese und mehrstufige HPLC-Aufreinigung. Erst danach geht jede Charge zur externen Freigabeanalytik.</p>
+      <h3 data-i18n="about.promTitle">Unser Versprechen</h3>
+      <p class="b" data-i18n="about.promBody">Die Lot-Nummer auf Ihrem Vial führt zum passenden Analysezertifikat. Sie erhalten genau die Charge, die geprüft wurde.</p>
+    </div>
+    <ul class="card checks">
+      <li><span class="tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"></path></svg></span><span data-i18n="c1">Mindestreinheit 99,0 % per RP-HPLC</span></li>
+      <li><span class="tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"></path></svg></span><span data-i18n="c2">Identität per ESI-Massenspektrometrie</span></li>
+      <li><span class="tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"></path></svg></span><span data-i18n="c3">Analysezertifikat zu jeder Charge</span></li>
+      <li><span class="tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"></path></svg></span><span data-i18n="c4">Lagerung bei 2–8 °C</span></li>
+      <li><span class="tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"></path></svg></span><span data-i18n="c5">EU-Versand mit Sendungsverfolgung</span></li>
+      <li><span class="tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"></path></svg></span><span data-i18n="c6">Kostenloser Versand ab 100 €</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- QUALITY -->
+<section class="wrap section" id="quality">
+  <div class="sec-head">
+    <span class="pill" data-i18n="q.pill">Qualität</span>
+    <h2 class="h2" data-i18n="q.title">Reinheit ist ein Messwert, keine Behauptung.</h2>
+    <p class="lead" data-i18n="q.sub">Jede Charge wird extern geprüft. Der Beleg kommt mit der Lieferung.</p>
+  </div>
+  <div class="three">
+    <div class="card q-card">
+      <span class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"></path><path d="M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"></path><path d="M7.5 15h9"></path></svg></span>
+      <h3 data-i18n="q.c1t">Geprüfte Reinheit</h3>
+      <p data-i18n="q.c1b">RP-HPLC bei 220 nm und ESI-MS durch ein unabhängiges Labor, bevor die Charge freigegeben wird.</p>
+    </div>
+    <div class="card q-card">
+      <span class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path><path d="M9 14l2 2 4-4"></path></svg></span>
+      <h3 data-i18n="q.c2t">Zertifikat pro Charge</h3>
+      <p data-i18n="q.c2b">Das Analysezertifikat ist über die Chargennummer abrufbar. So prüfen Sie genau die Charge, die Sie in der Hand halten.</p>
+    </div>
+    <div class="card q-card">
+      <span class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"></path><path d="M4.5 7.5l15 9"></path><path d="M19.5 7.5l-15 9"></path><path d="M9.5 4.5L12 7l2.5-2.5"></path><path d="M9.5 19.5L12 17l2.5 2.5"></path></svg></span>
+      <h3 data-i18n="q.c3t">Kontrollierte Lagerung</h3>
+      <p data-i18n="q.c3b">Lagerung bei 2–8 °C, Kommissionierung unter Schutzatmosphäre, Versand mit Sendungsverfolgung.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="wrap section" id="process">
+  <div class="sec-head">
+    <span class="pill" data-i18n="p.pill">Ablauf</span>
+    <h2 class="h2" data-i18n="p.title">Vom Rohstoff bis zum versiegelten Vial</h2>
+  </div>
+  <ol class="steps">
+    <li class="card"><span class="n">01</span><h3 data-i18n="p.s1t">Rohstoffprüfung</h3><p data-i18n="p.s1b">Jede eingehende Aminosäure-Charge wird auf Identität und Restlösemittel geprüft.</p></li>
+    <li class="card"><span class="n">02</span><h3 data-i18n="p.s2t">Festphasensynthese</h3><p data-i18n="p.s2b">Automatisierte Synthese nach dokumentiertem Protokoll. Abweichungen stoppen die Charge.</p></li>
+    <li class="card"><span class="n">03</span><h3 data-i18n="p.s3t">HPLC-Aufreinigung</h3><p data-i18n="p.s3b">Mehrstufige präparative HPLC, danach Lyophilisierung unter Vakuum.</p></li>
+    <li class="card"><span class="n">04</span><h3 data-i18n="p.s4t">Externe Freigabe</h3><p data-i18n="p.s4b">Ein Drittlabor bestätigt Reinheit und Molekülmasse. Erst dann geht die Charge in den Verkauf.</p></li>
+  </ol>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="wrap section" id="certificates">
+  <div class="card certs">
+    <div class="txt">
+      <span class="pill" data-i18n="cert.pill">Analysezertifikate</span>
+      <h2 data-i18n="cert.title">Erst den Beleg sehen, dann bestellen.</h2>
+      <p class="lead" data-i18n="cert.body">Zu jeder Charge gibt es ein Analysezertifikat eines unabhängigen Labors. Im Katalog finden Sie es direkt beim Produkt.</p>
+      <a class="btn" href="https://refreshedbiolabs.com/produkte" data-i18n="cert.cta">Zertifikate im Katalog ansehen</a>
+    </div>
+    <div class="tiles">
+      <div class="tile"><span class="k" data-i18n="cert.t1k">Identität</span><span class="v">ESI-MS</span></div>
+      <div class="tile"><span class="k" data-i18n="cert.t2k">Reinheit</span><span class="v">RP-HPLC 220 nm</span></div>
+      <div class="tile"><span class="k" data-i18n="cert.t3k">Wassergehalt</span><span class="v" data-i18n="cert.t3v">Karl-Fischer</span></div>
+      <div class="tile"><span class="k" data-i18n="cert.t4k">Rückverfolg&shy;barkeit</span><span class="v" data-i18n="cert.t4v">Lot-Nr. auf jedem Vial</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="wrap section" id="faq">
+  <div class="sec-head">
+    <span class="pill">FAQ</span>
+    <h2 class="h2" data-i18n="faq.title">Häufige Fragen</h2>
+  </div>
+  <div class="faq">
+    <details name="faq" open><summary><span data-i18n="faq.q1">Wofür sind die Produkte bestimmt?</span><span class="sign" aria-hidden="true">+</span></summary><p data-i18n="faq.a1">Ausschließlich für die Laborforschung. Die Produkte sind nicht für den menschlichen oder tierischen Gebrauch bestimmt und werden nicht als Arzneimittel, Lebensmittel oder Kosmetikprodukt verkauft.</p></details>
+    <details name="faq"><summary><span data-i18n="faq.q2">Wie erhalte ich das Analysezertifikat?</span><span class="sign" aria-hidden="true">+</span></summary><p data-i18n="faq.a2">Das Analysezertifikat ist bei jeder Bestellung inklusive und über die Chargennummer auf dem Vial abrufbar.</p></details>
+    <details name="faq"><summary><span data-i18n="faq.q3">Wie schnell wird geliefert?</span><span class="sign" aria-hidden="true">+</span></summary><p data-i18n="faq.a3">Bestellungen bis 15 Uhr verlassen unser Lager am selben Werktag. Die Lieferung innerhalb der EU dauert 2–3 Tage, mit Sendungsverfolgung. Ab 100 € ist der Versand kostenlos.</p></details>
+    <details name="faq"><summary><span data-i18n="faq.q4">Wie werden die Produkte gelagert und verpackt?</span><span class="sign" aria-hidden="true">+</span></summary><p data-i18n="faq.a4">Wir lagern bei 2–8 °C und kommissionieren unter Schutzatmosphäre. Lagerhinweise für jedes Produkt finden Sie auf der Produktseite.</p></details>
+    <details name="faq"><summary><span data-i18n="faq.q5">Wer kann bestellen?</span><span class="sign" aria-hidden="true">+</span></summary><p data-i18n="faq.a5">Bestellungen sind ausschließlich für Forschungszwecke und nur für Personen ab 18 Jahren möglich.</p></details>
+    <details name="faq"><summary><span data-i18n="faq.q6">Bieten Sie kundenspezifische Synthesen an?</span><span class="sign" aria-hidden="true">+</span></summary><p data-i18n="faq.a6">Ja. Wir synthetisieren individuelle Sequenzen inklusive vollständiger Analytik und Stabilitätsdaten. Schreiben Sie uns dazu über die Kontaktseite.</p></details>
+  </div>
+</section>
+
+<!-- CONTACT / FINAL CTA -->
+<section class="wrap section" id="final">
+  <div class="sec-head">
+    <span class="pill" data-i18n="final.pill">Kontakt</span>
+    <h2 class="h2" data-i18n="final.title">Bereit für Ihre nächste Charge?</h2>
+  </div>
+  <div class="two-col">
+    <div class="card contact">
+      <div class="row"><span class="k" data-i18n="final.emailLabel">E-Mail</span><a class="v" href="mailto:refreshedbiolabs@outlook.de">refreshedbiolabs@outlook.de</a></div>
+      <div class="row"><span class="k" data-i18n="final.addrLabel">Anschrift</span><span class="v">Kerim Secici<br>Elsenstraße 49<br>12059 Berlin</span></div>
+      <div class="row"><span class="k" data-i18n="final.shipLabel">Versand</span><span class="v" data-i18n="final.ship">Aus der EU · Bestellung bis 15 Uhr, Versand am selben Werktag</span></div>
+    </div>
+    <div class="card final-card">
+      <p class="t" data-i18n="final.cardTitle">Prüfen Sie das Zertifikat. Bestellen Sie in wenigen Minuten.</p>
+      <p class="lead" data-i18n="final.body">Im Katalog sehen Sie zu jedem Produkt die Lot-Nummer, die gemessene Reinheit und das Analysezertifikat.</p>
+      <a class="btn btn-accent" href="https://refreshedbiolabs.com/produkte" data-i18n="final.cta">Zum Katalog</a>
+      <span class="micro" data-i18n="micro">Versand aus der EU in 2–3 Tagen · Kostenlos ab 100 € · Sicherer Checkout</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <span class="logo"><b>refreshed</b><span>Bio Labs</span></span>
+      <p data-i18n="f.tagline">Dokumentierte Forschungsmaterialien. Jede Charge extern per HPLC und Massenspektrometrie geprüft.</p>
+    </div>
+    <div class="footer-cols">
+      <div><span class="h">Shop</span><a href="https://refreshedbiolabs.com/produkte" data-i18n="f.catalog">Katalog</a><a href="https://refreshedbiolabs.com/qualitaet" data-i18n="f.coas">Analysezertifikate</a></div>
+      <div><span class="h">Service</span><a href="https://refreshedbiolabs.com/faq">FAQ</a><a href="https://refreshedbiolabs.com/kontakt" data-i18n="f.contact">Kontakt</a><a href="https://refreshedbiolabs.com/partner" data-i18n="f.partner">Partner werden</a></div>
+      <div><span class="h" data-i18n="f.legal">Rechtliches</span><a href="https://refreshedbiolabs.com/impressum">Impressum</a><a href="https://refreshedbiolabs.com/datenschutz" data-i18n="f.privacy">Datenschutz</a><a href="https://refreshedbiolabs.com/agb" data-i18n="f.terms">AGB</a></div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p><span data-i18n="ruo.title">Nur für die Laborforschung (Research Use Only).</span> <span data-i18n="ruo.body">Alle Produkte sind ausschließlich für Forschungszwecke bestimmt. Nicht für den menschlichen oder tierischen Gebrauch, nicht zur Diagnose, Behandlung oder Vorbeugung von Krankheiten. Verkauf nur an Personen ab 18 Jahren.</span></p>
+    <span>© 2026 Refreshed Biolabs</span>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <a class="btn" href="https://refreshedbiolabs.com/produkte" data-i18n="nav.cta">Zum Katalog</a>
+</div>
+
+<script>
+(function () {
+  // English copy. German is read from the HTML itself, so the page works without JS and stays SEO-friendly.
+  var EN = {
+    "skip": "Skip to content",
+    "bar": "For laboratory research use only · Ships from the EU in 2–3 days · Free over €100",
+    "nav.about": "About", "nav.quality": "Quality", "nav.process": "Process", "nav.certs": "Certificates", "nav.cta": "View catalog",
+    "menu.open": "Open menu", "menu.close": "Close menu",
+    "hero.pill": "Documented research materials",
+    "hero.h1a": "Purity you can", "hero.h1b": "verify.",
+    "hero.sub": "Every batch is tested by an independent lab using HPLC and mass spectrometry, and ships with its own Certificate of Analysis. You see the measured result before you order.",
+    "hero.cta": "Browse the catalog",
+    "micro": "Ships from the EU in 2–3 days · Free over €100 · Secure checkout",
+    "hero.lotLabel": "Batch verified", "hero.lotPurity": "Purity 99.2% · CoA available",
+    "hero.anLabel": "Analysis", "hero.anSub": "By an independent third-party lab",
+    "ruo.title": "For laboratory research use only.",
+    "ruo.body": "All products are intended solely for laboratory research. Not for human or animal use, and not intended to diagnose, treat or prevent any disease. Sold to adults 18+ only.",
+    "s1v": "99.0%+", "s1l": "Minimum purity", "s2l": "With every batch", "s3l": "External analysis", "s4v": "2–3 days", "s4l": "EU delivery",
+    "band.pill": "Catalog", "band.title": "Every batch, on the record.",
+    "band.body": "Each listing shows its lot number, measured purity and Certificate of Analysis. Orders placed by 3 pm leave our warehouse the same business day.",
+    "band.cta": "Open the catalog",
+    "about.pill": "About us", "about.title": "For labs that want evidence, not promises.",
+    "about.sub": "Refreshed Biolabs supplies documented research materials to laboratories and qualified researchers. No batch ships until an independent lab has confirmed it.",
+    "about.intro": "We supply material whose identity and purity have been measured and documented. Nothing more, nothing less.",
+    "about.stdTitle": "Our standard",
+    "about.stdBody": "Raw-material checks, documented synthesis and multi-stage HPLC purification. Only then does a batch go to external release testing.",
+    "about.promTitle": "Our promise",
+    "about.promBody": "The lot number on your vial links to its matching Certificate of Analysis. The batch you receive is the batch that was tested.",
+    "c1": "99.0% minimum purity by RP-HPLC", "c2": "Identity confirmed by ESI mass spectrometry", "c3": "Certificate of Analysis for every batch",
+    "c4": "Stored at 2–8 °C", "c5": "EU shipping with tracking", "c6": "Free shipping over €100",
+    "q.pill": "Quality", "q.title": "Purity is a measurement, not a claim.", "q.sub": "Every batch is tested externally, and the proof ships with it.",
+    "q.c1t": "Verified purity", "q.c1b": "RP-HPLC at 220 nm and ESI-MS by an independent lab before the batch is released.",
+    "q.c2t": "A certificate per batch", "q.c2b": "Look up the Certificate of Analysis by lot number and check the exact batch you're holding.",
+    "q.c3t": "Controlled storage", "q.c3b": "Stored at 2–8 °C, packed under protective atmosphere, shipped with tracking.",
+    "p.pill": "Process", "p.title": "From raw material to sealed vial",
+    "p.s1t": "Raw-material check", "p.s1b": "Every incoming amino acid batch is tested for identity and residual solvents.",
+    "p.s2t": "Solid-phase synthesis", "p.s2b": "Automated synthesis on a documented protocol. Any deviation stops the batch.",
+    "p.s3t": "HPLC purification", "p.s3b": "Multi-stage preparative HPLC, followed by vacuum lyophilization.",
+    "p.s4t": "External release", "p.s4b": "An independent lab confirms purity and molecular mass. Only then is the batch released for sale.",
+    "cert.pill": "Certificates", "cert.title": "See the proof before you order.",
+    "cert.body": "Every batch has a Certificate of Analysis from an independent lab. In the catalog, it sits right next to the product.",
+    "cert.cta": "View certificates in the catalog",
+    "cert.t1k": "Identity", "cert.t2k": "Purity", "cert.t3k": "Water content", "cert.t3v": "Karl Fischer", "cert.t4k": "Traceability", "cert.t4v": "Lot no. on every vial",
+    "faq.title": "Common questions",
+    "faq.q1": "What are the products intended for?", "faq.a1": "Laboratory research only. The products are not for human or animal use and are not sold as medicines, food or cosmetics.",
+    "faq.q2": "How do I get the Certificate of Analysis?", "faq.a2": "The Certificate of Analysis is included with every order and can be looked up using the lot number on the vial.",
+    "faq.q3": "How fast is delivery?", "faq.a3": "Orders placed by 3 pm leave our warehouse the same business day. Delivery within the EU takes 2–3 days, with tracking. Shipping is free over €100.",
+    "faq.q4": "How are products stored and packed?", "faq.a4": "We store at 2–8 °C and pick orders under protective atmosphere. Storage notes for each item are on its product page.",
+    "faq.q5": "Who can order?", "faq.a5": "Orders are for research purposes only and limited to adults aged 18 and over.",
+    "faq.q6": "Do you offer custom synthesis?", "faq.a6": "Yes. We synthesize custom sequences with full analytics and stability data. Reach out through our contact page.",
+    "final.pill": "Get in touch", "final.title": "Ready for your next batch?",
+    "final.emailLabel": "Email", "final.addrLabel": "Address", "final.shipLabel": "Shipping",
+    "final.ship": "From the EU · Order by 3 pm, ships the same business day",
+    "final.cardTitle": "Check the certificate. Order in minutes.",
+    "final.body": "In the catalog, every item shows its lot number, measured purity and Certificate of Analysis.",
+    "final.cta": "View catalog",
+    "f.tagline": "Documented research materials. Every batch externally tested by HPLC and mass spectrometry.",
+    "f.catalog": "Catalog", "f.coas": "Certificates of Analysis", "f.contact": "Contact", "f.partner": "Become a partner",
+    "f.legal": "Legal", "f.privacy": "Privacy policy", "f.terms": "Terms",
+    "meta.title": "Refreshed Biolabs – Purity you can verify",
+    "meta.desc": "Documented research materials. Every batch externally tested by HPLC and mass spectrometry, with its own Certificate of Analysis. For laboratory research use only."
+  };
+
+  var DE = { "menu.open": "Menü öffnen", "menu.close": "Menü schließen" };
+  var textEls = document.querySelectorAll("[data-i18n]");
+  textEls.forEach(function (el) { var k = el.getAttribute("data-i18n"); if (!(k in DE)) DE[k] = el.textContent; });
+  var metaDesc = document.querySelector('meta[name="description"]');
+  DE["meta.title"] = document.title;
+  DE["meta.desc"] = metaDesc ? metaDesc.getAttribute("content") : "";
+
+  var current = "de", menuOpen = false;
+  var toggle = document.getElementById("menuToggle");
+  var header = document.getElementById("siteHeader");
+
+  function dict() { return current === "en" ? EN : DE; }
+
+  function setLang(lang) {
+    current = lang;
+    var d = dict();
+    document.documentElement.lang = lang;
+    textEls.forEach(function (el) { var v = d[el.getAttribute("data-i18n")]; if (v !== undefined) el.textContent = v; });
+    document.title = d["meta.title"];
+    if (metaDesc) metaDesc.setAttribute("content", d["meta.desc"]);
+    toggle.setAttribute("aria-label", d[menuOpen ? "menu.close" : "menu.open"]);
+    document.querySelectorAll(".lang button").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false");
+    });
+    try { localStorage.setItem("rbl-lang", lang); } catch (e) {}
+  }
+  document.querySelectorAll(".lang button").forEach(function (b) {
+    b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+  });
+
+  // Initial language: ?lang= in the URL, then a saved choice, then German.
+  var initial = "de";
+  try {
+    var param = new URLSearchParams(location.search).get("lang");
+    var saved = localStorage.getItem("rbl-lang");
+    if (param === "en" || param === "de") initial = param;
+    else if (saved === "en" || saved === "de") initial = saved;
+  } catch (e) {}
+  if (initial !== "de") setLang(initial);
+
+  // Mobile menu
+  function setMenu(open) {
+    menuOpen = open;
+    header.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    toggle.setAttribute("aria-label", dict()[open ? "menu.close" : "menu.open"]);
+  }
+  toggle.addEventListener("click", function () { setMenu(!menuOpen); });
+  document.querySelectorAll("#mobileNav a").forEach(function (a) { a.addEventListener("click", function () { setMenu(false); }); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && menuOpen) { setMenu(false); toggle.focus(); } });
+
+  // FAQ: one answer open at a time
+  var details = document.querySelectorAll(".faq details");
+  details.forEach(function (d) {
+    d.addEventListener("toggle", function () { if (d.open) details.forEach(function (o) { if (o !== d) o.open = false; }); });
+  });
+
+  // Mobile sticky CTA: visible between the hero and the final call to action
+  var sticky = document.getElementById("stickyCta");
+  if ("IntersectionObserver" in window && sticky) {
+    var heroIn = true, finalIn = false;
+    var upd = function () { sticky.classList.toggle("show", !heroIn && !finalIn); };
+    new IntersectionObserver(function (e) { heroIn = e[0].isIntersecting; upd(); }).observe(document.getElementById("hero"));
+    new IntersectionObserver(function (e) { finalIn = e[0].isIntersecting; upd(); }).observe(document.getElementById("final"));
+  }
+})();
+</script>
+</body>
+</html>
